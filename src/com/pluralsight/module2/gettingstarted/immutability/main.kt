@@ -1,4 +1,4 @@
-package com.pluralsight.module2.immutability
+package com.pluralsight.module2.gettingstarted.immutability
 
 fun main(args: Array<String>){
     println("Hello world")

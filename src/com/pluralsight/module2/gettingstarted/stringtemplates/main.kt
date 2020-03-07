@@ -1,4 +1,4 @@
-package com.pluralsight.module2.stringtemplates
+package com.pluralsight.module2.gettingstarted.stringtemplates
 
 fun main(args: Array<String>){
     val q = Question()

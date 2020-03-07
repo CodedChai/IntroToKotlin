@@ -1,4 +1,4 @@
-package com.pluralsight.module2.`when`
+package com.pluralsight.module2.gettingstarted.branching
 
 fun main(args: Array<String>){
     val q = Question()
@@ -11,7 +11,13 @@ fun main(args: Array<String>){
 
     println("The answer is ${q.CorrectAnswer}")
 
-    q.printResult()
+    val message = if(q.Answer == q.CorrectAnswer) {
+        "You got it dude!"
+    } else {
+        "Try again"
+    }
+
+    println(message)
 }
 
 class Question {
@@ -21,12 +27,5 @@ class Question {
 
     fun display() {
         println("You said: $Answer")
-    }
-
-    fun printResult(){
-        when (Answer) {
-            CorrectAnswer -> println("You got it dude!")
-            else -> println("Try again")
-        }
     }
 }
